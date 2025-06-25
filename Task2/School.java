@@ -13,6 +13,14 @@ class School{
         addStudent(students, 1, "Sam", 85.5f);
         addStudent(students, 2, "Anu", 90.0f); 
         addStudent(students,3, "selva", 75.5f);
+
+        printStudents(students);
+        System.out.println("Removing student with ID 2");
+        removeStudent(students, 2);
+        printStudents(students);
+        System.out.println("Updating student with ID 1");
+        updateStudent(students, 1, "Sam Updated", 88.0f);
+        printStudents(students);
     }
 
     static void printStudents(ArrayList<Student> students) {
